@@ -1,4 +1,7 @@
 #include "main.h"
+#include <stdio.h>
+#include <stddef.h>
+#include <unistd.h>
 
 /**
  * print_i - prints an integer
@@ -22,7 +25,7 @@ int print_i(va_list i)
 	}
 	if (n < 0)
 	{
-		_putchar('-');
+		putchar('-');
 		count++;
 		for (j = 0; j < 10; j++)
 			a[j] *= -1;
@@ -32,7 +35,7 @@ int print_i(va_list i)
 		sum += a[j];
 		if (sum != 0 || j == 9)
 		{
-			_putchar('0' + a[j]);
+			putchar('0' + a[j]);
 			count++;
 		}
 	}
@@ -61,7 +64,7 @@ int print_d(va_list d)
 	}
 	if (n < 0)
 	{
-		_putchar('-');
+		putchar('-');
 		count++;
 		for (j = 0; j < 10; j++)
 			a[j] *= -1;
@@ -71,7 +74,7 @@ int print_d(va_list d)
 		sum += a[j];
 		if (sum != 0 || j == 9)
 		{
-			_putchar('0' + a[j]);
+			putchar('0' + a[j]);
 			count++;
 		}
 	}

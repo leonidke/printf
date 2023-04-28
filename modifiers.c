@@ -1,3 +1,5 @@
+#include <stddef.h>
+#include "main.h"
 unsigned int print_string_width(buffer_t *output,
 		unsigned char flags, int wid, int prec, int size);
 unsigned int print_width(buffer_t *output, unsigned int printed,
